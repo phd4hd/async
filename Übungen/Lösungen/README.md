@@ -1,1 +1,0 @@
-# Lösungen zu den Übungen
