@@ -5,7 +5,7 @@ Begleitmaterial zur Probelehrveranstaltung an der DHBW Stuttgart am 28. April 20
 
 ### FOLIEN.pdf
 
-Foliensätze zur Veranstaltung
+Foliensatz zur Veranstaltung
 
 ### Demos
 
