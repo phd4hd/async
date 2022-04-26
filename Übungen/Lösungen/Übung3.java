@@ -8,7 +8,7 @@ import javax.swing.JFrame;
 import javax.swing.JProgressBar;
 import javax.swing.border.EmptyBorder;
 
-public class Übung3 {
+public class Ãœbung3 {
     private static JProgressBar linkerBalken, rechterBalken;
 
 	private static void zeigeFenster(String title) {
@@ -47,26 +47,26 @@ public class Übung3 {
 	}
 	
 	public static void main(String[] args) {
-		zeigeFenster("Lösung 3");
+		zeigeFenster("LÃ¶sung 3");
 		System.out.println("Jetzt gehts los...");
 
 		CompletableFuture<Object> speicherFuture = null;
-		List<Integer> zählerSpeicher = new ArrayList<>();
+		List<Integer> zÃ¤hlerSpeicher = new ArrayList<>();
 		for (int i=1; i<=10; i++) {
 			verbraucheEtwasZeit(20);
 			linkerBalken.setValue(i*10);
 			
-		    // Ändern Sie diesen synchronen Aufruf in einen asynchronen Aufruf um
+		    // Ã„ndern Sie diesen synchronen Aufruf in einen asynchronen Aufruf um
 			speicherFuture = 
 					CompletableFuture.supplyAsync( () -> erzeugeZahl() )
-					.thenApply( (zahl) -> zählerSpeicher.add(zahl) );
+					.thenApply( (zahl) -> zÃ¤hlerSpeicher.add(zahl) );
 		}
-		zählerSpeicher.sort( (a,b) -> a-b );
 		
-		// müssen noch warten, bis der letzte Thread durch ist ...
+		// mÃ¼ssen noch warten, bis der letzte Thread durch ist ...
 		while ( !speicherFuture.isDone() ) verbraucheEtwasZeit(10);
+		zÃ¤hlerSpeicher.sort( (a,b) -> a-b );
 
 		System.out.println("Fertig!");
-		System.out.println(zählerSpeicher);
+		System.out.println(zÃ¤hlerSpeicher);
 	}
 }
