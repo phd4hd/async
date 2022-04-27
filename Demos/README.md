@@ -1,5 +1,14 @@
 # Demos
 
+### Starten der Demos
+
+Legen Sie in Eclipse eine neues Java-Projekt an, vergeben dem Projekt einen sinnvollen Namen (z.B. Demo1) und klicken auf "Finish".
+Mehr Einstellungen sind nicht notwendig.
+Sollten Sie gefragt werden, ob eine "module-info.java" Datei erzeugt werden soll, klicken Sie auf "Don't Create".
+
+Ziehen Sie dann mit der Maus die gewünschte Java-Datei (z.B. Demo1.java) in den "src"-Ordner im Package Explorer in der Eclipse IDE.
+Starten Sie das Programm wie gewohnt mit einem Klick auf das weiße Dreieck im grünen Kreis.
+
 ## Demo 1
 Synchroner Methodenaufruf. Das Hauptprogramm führt eine Zählschleife mit 100 Durchgängen durch und nach der Hälfte der Durchgänge wird die Methode aufgerufen, die etwas ähnliches macht. Dabei wird die Abarbeitung des Hauptprogramms angehalten und dann die Methode ausgeführt. Nach Beendigung der Methode wird das Hauptprogramm an der Stelle fortgesetzt, wo es für den Aufruf in die Methode angehalten worden ist.
 
