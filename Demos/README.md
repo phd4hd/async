@@ -1,7 +1,7 @@
 # Demos
 
 ## Demo 1
-Synchroner Methodenaufruf. Das Hauptprogramm führt eine Zählschleife mit 100 Durchgängen durch und nach der Hälfte der Durchgänge wird die Methode aufgerufen, die etwas ähnliches macht. Dabei wird die Abarbeitung des Hauptprogramms angehalten und dann die Methode ausgeführt. Nach Beendigung der Methode wird das Hauptprogramm an der Stelle fortgesetzt, wo es für den Aufruf in die Methode angehaltet worden ist.
+Synchroner Methodenaufruf. Das Hauptprogramm führt eine Zählschleife mit 100 Durchgängen durch und nach der Hälfte der Durchgänge wird die Methode aufgerufen, die etwas ähnliches macht. Dabei wird die Abarbeitung des Hauptprogramms angehalten und dann die Methode ausgeführt. Nach Beendigung der Methode wird das Hauptprogramm an der Stelle fortgesetzt, wo es für den Aufruf in die Methode angehalten worden ist.
 
 ## Demo 2
 Asynchroner Methodenaufruf. Dazu muss ein zusätzlicher Thread gestartet werden. Hauptprogramm und Methode führen eine Zählschleife mit 100 Durchgängen durch, jedoch kann das Hauptprogramm weiterarbeiten, nachdem nach der Hälfte der Durchgänge die Methode asynchron gestartet worden ist, d.h. das Ergebnis der Methode wurde diesmal nicht abgewartet. Das Programm ist dadurch schneller fertig als Demo 1.
